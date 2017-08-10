@@ -1,0 +1,1 @@
+from .test_get_preposicoes import GetInfoCDPreposicoes

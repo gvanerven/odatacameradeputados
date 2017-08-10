@@ -1,0 +1,1 @@
+from .preposicoes import get_preposicoes
