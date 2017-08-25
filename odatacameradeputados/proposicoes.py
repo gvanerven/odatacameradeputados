@@ -2,6 +2,7 @@ import requests
 import json
 from . import defaults
 
+
 def get_proposicoes():
     proposicoes = {}
     r = requests.get(defaults.URL_BASE_PROPOSICOES.format(""), headers=defaults.HEADERS)
