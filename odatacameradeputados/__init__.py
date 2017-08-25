@@ -1,3 +1,3 @@
 from .defaults import *
-from .preposicoes import get_preposicoes
+from .proposicoes import get_proposicoes
 

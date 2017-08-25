@@ -1,1 +1,1 @@
-from .test_get_preposicoes import GetInfoCDPreposicoes
+from .test_get_proposicoes import GetInfoCDProposicoes
