@@ -1,12 +1,14 @@
 import requests
-import json
 from . import defaults
 
 
-def get_proposicoes():
+def get_proposicoes(debug=False):
     proposicoes = {}
     r = requests.get(defaults.URL_BASE_PROPOSICOES.format(""), headers=defaults.HEADERS)
-    print(r.content)
+    if debug:
+        print(r.content)
     proposicoes["status_code"] = r.status_code
-    proposicoes["proposicoes"] = r.content["dados"]
+    proposicoes["proposicoes"] = r.json()
+    if debug:
+        print(proposicoes)
     return proposicoes
